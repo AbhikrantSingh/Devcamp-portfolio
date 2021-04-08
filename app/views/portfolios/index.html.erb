@@ -13,7 +13,6 @@
 <%= image_tag port.thumb_image unless port.thumb_image.nil? %>
 	
 <%= link_to "Create Edit Item",edit_portfolio_path(port) %>	
-
-
+<%= link_to "Delete portfolio", portfolio_path(port), method: :delete, data: { confirm: 'Are uh sure??' } %>	
 
 <% end %>
